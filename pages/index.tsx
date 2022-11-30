@@ -46,7 +46,7 @@ export default function Home() {
       setSending(true)
       const { data } = await claimFaucet(account, captcha)
       setRecentTxs([data, ...(recentTxs || [])])
-      toast.success('Claimed successfully')
+      toast.success('You will see MATIC in your wallet in 1-20 minutes')
     } catch (err: any) {
       toast.error(err.response?.data.message || 'Something went wrong')
       console.log(err)
