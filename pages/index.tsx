@@ -97,7 +97,7 @@ export default function Home() {
       </Head>
       <div className="box-wrapper">
       <div className="box-background"></div>
-      <div className="py-8 px-8 light:light-box dark:dark-box box">
+      <div className="py-8 px-8 box light:light-box dark:dark-box box">
         <h1 className="mb-4 flex flex-col items-center justify-center text-center">
           <PolygonLogo className="h-14" />
           <span className="mt-2 mb-8">Polygon faucet</span>
