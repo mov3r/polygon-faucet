@@ -103,7 +103,7 @@ export default function Home() {
           <span className="mt-2 mb-8">Polygon faucet</span>
           <code className="text-m">
             Faucet Balance: {faucetBalance}{' '}
-            <span className="text-[#2fd9f1]">MATIC</span>
+            <span className="text-[#fff]">MATIC</span>
           </code>
 
           <div className="max-w-full truncate">
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="mt-1">
               Balance:{' '}
               <code>
-                {balance} <span className="text-[#2fd9f1]">MATIC</span>
+                {balance} <span className="text-[#fff]">MATIC</span>
               </code>
             </div>
           </div>
