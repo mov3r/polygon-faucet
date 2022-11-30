@@ -26,6 +26,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://matic.btn.sh/" />
         <meta property="og:title" content="Polygon Matic Community Faucet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet"/>
         <meta
           property="og:description"
           content="Polygon Matic community run faucet, no ads, no BS."
@@ -43,7 +46,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta property="twitter:image" content="/banner.png" />
       </Head>
-      <ThemeSwitch />
       <ToastContainer hideProgressBar={true} />
       <main
         className={`app-container light:bg-white dark:bg-dark dark:text-white`}

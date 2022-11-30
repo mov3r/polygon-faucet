@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import 'react-toastify/dist/ReactToastify.css';
+
+* {
+  font-family: 'Poppins', sans-serif!important;
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -110,4 +117,49 @@
 .dark .dark\:dark-box {
   background: radial-gradient(77.58% 77.58% at 77.12% 22.42%,#454545 0,#272727 100%);
   border: 1px solid #4f4f4f;
+}
+
+
+.button {
+  width: 100%;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_view_default {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #17171A;
+
+  background: linear-gradient(90deg, #59FFEB 0%, #14C7FF 100%);
+  border-radius: 10px;
+
+  padding: 15px 0;
+}
+
+.button_view_icon {
+  width: 32px;
+  height: 32px;
+  background: #E8E8E8;
+  border-radius: 8px;
+}
+
+.button_view_icon:hover {
+  background: hsla(0,0%,91%,.6);
+}
+
+.button:disabled {
+  background: #EAEAEA;
+  color: #17171A;
+  cursor: unset;
 }

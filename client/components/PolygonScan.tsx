@@ -14,7 +14,7 @@ const PolygonScan = ({
       href={`https://polygonscan.com/${tx ? 'tx' : 'address'}/${tx ? tx : address}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-purple-600 dark:text-lime-400 w-16 md:w-auto truncate"
+      className="text-[#2fd9f1] w-16 md:w-auto truncate"
     >
       {tx
         ? short
