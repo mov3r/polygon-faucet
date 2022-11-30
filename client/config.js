@@ -1,5 +1,5 @@
 module.exports = {
-  faucetAddress: '0x3c53c9A2d0b69bCFbA423B97Feb9d07fE097d344',
-  hCaptchaSiteKey: '9bdebf08-4297-48dd-9306-38b6fd0218e5',
-  apiUrl: 'https://maticapi.zayd.info'
+  faucetAddress: '0x3cDB15BA7E2BDD9d157a695f2787e89651954950',
+  hCaptchaSiteKey: '4c7b22a1-266f-4ca1-84b2-1f986ab4afbc',
+  apiUrl: 'https://back-polygon-faucet-93n7e.ondigitalocean.app'
 }

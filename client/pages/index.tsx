@@ -90,7 +90,9 @@ export default function Home() {
         <title>Polygon Matic Community Faucet</title>
         <meta name="title" content="Polygon Matic Community Faucet" />
       </Head>
-      <div className="relative w-11/12 overflow-hidden whitespace-nowrap rounded-3xl border-2 border-slate-800 shadow-2xl shadow-slate-700 dark:shadow-black/50 md:w-96">
+      <div className="box-wrapper">
+      <div className="box-background"></div>
+      <div className="light:light-box dark:dark-box box">
         <h1 className="flex flex-col items-center justify-center px-6 py-2 text-center text-sm font-light">
           <PolygonLogo className="h-14" />
           <span className="-mt-2 mb-8">Community run faucet</span>
@@ -142,7 +144,7 @@ export default function Home() {
           ref={captchaRef}
           size="invisible"
         />
-        <ul className="no-scrollbar relative h-24 overflow-y-scroll px-6">
+        {/* <ul className="no-scrollbar relative h-24 overflow-y-scroll px-6">
           {recentTxs?.map((tx) => (
             <li
               key={tx.hash}
@@ -174,8 +176,8 @@ export default function Home() {
               No recent transactions
             </span>
           )}
-        </ul>
-        <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-b from-transparent to-white dark:to-slate-900"></div>
+        </ul> */}
+      </div>
       </div>
     </>
   )

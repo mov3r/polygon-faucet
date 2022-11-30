@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import { ToastContainer } from 'react-toastify'
 import ThemeSwitch from '../components/ThemeSwitch'
 import Head from 'next/head'
-import GithubCorner from '../components/GithubCorner'
 import PolygonScan from '../components/PolygonScan'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -44,27 +43,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta property="twitter:image" content="/banner.png" />
       </Head>
-      <GithubCorner repository={'https://github.com/zaydme/polygon-faucet'} />
       <ThemeSwitch />
       <ToastContainer hideProgressBar={true} />
       <main
-        className={`flex min-h-screen flex-col items-center justify-center bg-white py-2 dark:bg-slate-900 dark:text-white`}
+        className={`app-container light:bg-white dark:bg-dark dark:text-white`}
       >
         <Component {...pageProps} />
       </main>
-
-      <footer
-        className={`fixed bottom-2 left-0 flex w-full flex-col items-center justify-center space-y-2 text-xs text-gray-500`}
-      >
-        <div>
-          Made with ♡ by
-          <a className="ml-1 text-purple-600 dark:text-lime-400">Zayd</a>
-        </div>
-        <p className="flex">
-          <span className="mr-1">Developer donations ♥</span>
-          <PolygonScan address={'0xE140C1730333F39d4dad43dA1ed9144E7B991f2C'} />
-        </p>
-      </footer>
     </>
   )
 }
