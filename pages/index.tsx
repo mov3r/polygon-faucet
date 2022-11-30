@@ -93,7 +93,7 @@ export default function Home() {
     <>
       <Head>
         <title>Mover Polygon Faucet</title>
-        <meta name="title" content="Polygon Matic Community Faucet" />
+        <meta name="title" content="Mover's Polygon Faucet" />
       </Head>
       <div className="box-wrapper">
       <div className="box-background"></div>
